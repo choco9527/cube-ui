@@ -109,9 +109,9 @@
       },
       scroll (pos) {
         const x = Math.abs(pos.x)
-        const tabItemWidth = this.$refs.tabNav.$el.clientWidth
+        const tabNavWidth = this.$refs.tabNav.$el.clientWidth
         const slideScrollerWidth = this.$refs.slide.slide.scrollerWidth
-        const deltaX = x / slideScrollerWidth * tabItemWidth
+        const deltaX = x / slideScrollerWidth * tabNavWidth
         this.$refs.tabNav.setSliderTransform(deltaX)
       },
       resolveTitle (item) {
